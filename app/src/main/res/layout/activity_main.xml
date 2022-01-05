@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnSelf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자기소개" />
+
+    <Switch
+        android:id="@+id/switchShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="소개보이기" />
+
+
+    <Button
+        android:id="@+id/btnName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="이름" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        android:textColor="#2196F3"/>
+
+    <Button
+        android:id="@+id/btnSchool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="학교" />
+
+    <ImageView
+        android:id="@+id/h"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+    <Button
+        android:id="@+id/btnMajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="전공" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        android:textColor="#2196F3"/>
+
+    <Button
+        android:id="@+id/btnNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="학번" />
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        android:textColor="#2196F3"/>
+
+
+
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:content="@+id/content"
+        android:handle="@+id/handle">
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="위로 올리세요" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#AAFFFF"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnNewActivity"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:text="1.영화 포스터 보기" />
+
+            <Button
+                android:id="@+id/btnNewActivity3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.영화 예매하러 가기" />
+
+            <Button
+                android:id="@+id/btnNewActivity4"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:text="3.영화 스케줄 기록" />
+
+            <Button
+                android:id="@+id/btnNewActivity5"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:text="4.영화 감상문 쓰기 " />
+
+            <Button
+                android:id="@+id/btnNewActivity6"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:text="5.영화 선호도 표시" />
+
+        </LinearLayout>
+    </SlidingDrawer>
+
+</LinearLayout>
